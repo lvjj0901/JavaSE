@@ -1,7 +1,9 @@
 package com.ljj.algorithm.easy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Description:
@@ -40,9 +42,12 @@ import java.util.Collections;
  */
 public class PalindromeNumber009 {
     public static void main(String[] args) {
-        int x = 1234321;
+        int x = 12421;
         boolean flag1 = isPalindrome1(x);
         System.out.println(flag1);
+
+        boolean flag2 = isPalindrome2(x);
+        System.out.println(flag2);
     }
 
     /**
@@ -64,11 +69,18 @@ public class PalindromeNumber009 {
     /**
      * solution 2
      * forget String !!!
-     * @param x
+     * @param x 1234321
      * @return
      */
     public static boolean isPalindrome2(int x) {
-        //thinking ...
-        return false;
+        int origin = x;
+        int newNum = 0;
+        int tmp = 0 ;
+        while(x != 0){
+            tmp = x % 10;
+            newNum = newNum*10 + tmp;
+            x/=10;
+        }
+        return origin == newNum;
     }
 }
