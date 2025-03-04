@@ -27,6 +27,5 @@ public class JasonArrayTest {
         array.print();
         array.update(123,789);
         array.print();
-
     }
 }
