@@ -20,7 +20,13 @@ public class JasonArrayTest {
         array.add("BB");
         array.add(456);
         array.add(new Date());
-        array.add(888);
-        array.printArray();
+        array.print();
+        int i = array.find(456);
+        System.out.println(i);
+        array.delete("BB");
+        array.print();
+        array.update(123,789);
+        array.print();
+
     }
 }
