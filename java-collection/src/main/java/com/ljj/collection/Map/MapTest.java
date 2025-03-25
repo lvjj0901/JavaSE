@@ -1,6 +1,6 @@
 package com.ljj.collection.Map;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 
