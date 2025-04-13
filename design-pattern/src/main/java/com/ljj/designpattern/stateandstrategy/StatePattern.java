@@ -1,4 +1,4 @@
-package com.ljj.designpattern.stateandstrategy;
+package stateandstrategy;
 
 /**
  * Description:
